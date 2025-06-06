@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      width: 400px;
+      margin: 20px auto;
+      border: 2px solid black;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 80px;
+      resize: vertical;
+    }
+
+    input[type="file"] {
+      margin-top: 5px;
+    }
+
+    input[type="submit"] {
+      margin-top: 15px;
+      padding: 8px 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>User Registration Form</h2>
+  <p>Please fill in the details below to register:</p>
+
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" value="dm">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password">
+
+    <label for="confirm">Confirm Password:</label>
+    <input type="password" id="confirm" placeholder="Confirm your password">
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" placeholder="Enter any additional comments here"></textarea>
+
+    <label for="profile">Upload Profile Picture:</label>
+    <input type="file" id="profile">
+
+    <br>
+    <input type="submit" value="Register">
+  </form>
+</div>
+
+</body>
+</html>
